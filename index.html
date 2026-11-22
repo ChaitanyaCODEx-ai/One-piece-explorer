@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f3e9">
+    <meta name="description" content="A fan-made One Piece image gallery celebrating the crew and their adventures.">
+    <title>Grand Voyage — One Piece Fan Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="#" aria-label="Grand Voyage home">GRAND VOYAGE<span>.</span></a>
+      <span class="topbar-note">ONE PIECE FAN GALLERY</span>
+      <a class="contact-link" href="#open-gallery">THE COLLECTION <span aria-hidden="true">↘</span></a>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy-column">
+          <p class="eyebrow"><span class="status-dot"></span> A LITTLE ADVENTURE AWAITS</p>
+          <h1 id="page-title">A crew, a dream,<br>and the <em>open sea.</em></h1>
+          <p class="intro-copy">Set sail with the Straw Hat crew through a world of faraway islands, big dreams, and unforgettable adventures.</p>
+          <div class="intro-actions">
+            <button class="open-button" id="open-gallery" type="button">
+              <span>Explore the gallery</span><span class="button-arrow" aria-hidden="true">↓</span>
+            </button>
+            <label class="sound-option">
+              <input id="sound-toggle" type="checkbox" checked>
+              <span class="toggle" aria-hidden="true"></span>
+              <span>Play video sound <small>(on by default)</small></span>
+            </label>
+          </div>
+          <p class="sound-note">Sound starts on; untick to mute before entering. Volume is limited.</p>
+        </div>
+        <figure class="hero-art">
+          <img src="one%20piece%205.jpg" alt="The Straw Hat crew gathered together">
+          <img class="hero-mark" src="one%20piece%203.jpg" alt="">
+          <figcaption>THE STRAW HAT CREW <span>—</span> A WORLD OF THEIR OWN</figcaption>
+        </figure>
+      </section>
+
+      <section class="gallery-section" id="gallery" aria-labelledby="gallery-title" hidden>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 — THE VOYAGE</p>
+            <h2 id="gallery-title">A world of adventure</h2>
+          </div>
+          <p class="gallery-count">ISLANDS, CREW &amp; OPEN SEAS</p>
+        </div>
+        <div class="gallery-grid">
+          <article class="artwork photo-artwork">
+            <div class="artwork-image"><img src="one%20piece%201.jpg" alt="A pirate looking out across a vivid blue sea"></div>
+            <div class="artwork-caption"><span>01 / BEYOND THE HORIZON</span><span>THE OPEN SEA</span></div>
+          </article>
+          <article class="artwork photo-artwork">
+            <div class="artwork-image"><img src="one%20piece%202.jpg" alt="A collage of wanted posters featuring the crew"></div>
+            <div class="artwork-caption"><span>02 / WANTED: ADVENTURE</span><span>THE CREW</span></div>
+          </article>
+          <article class="artwork photo-artwork">
+            <div class="artwork-image"><img src="one%20piece%204.jpg" alt="A pirate beneath a moonlit, star-filled sky"></div>
+            <div class="artwork-caption"><span>03 / UNDER THE SAME STARS</span><span>THE GRAND LINE</span></div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>GRAND VOYAGE — FAN GALLERY</span>
+      <span>THE NEXT ISLAND AWAITS</span>
+    </footer>
+    <dialog class="warning-dialog" id="scare-warning" aria-labelledby="warning-title">
+      <p class="eyebrow">A MOMENT BEFORE YOU ENTER</p>
+      <h2 id="warning-title">The gallery contains a sudden visual scare.</h2>
+      <p>Continue only if you're comfortable with a sudden visual scare. Video sound is on by default; untick it to mute. Volume is limited.</p>
+      <div class="dialog-actions">
+        <button class="dialog-button dialog-button-secondary" id="cancel-entry" type="button">Not now</button>
+        <button class="dialog-button" id="confirm-entry" type="button">Enter anyway</button>
+      </div>
+    </dialog>
+    <div class="scare-overlay" id="scare-overlay" aria-hidden="true" hidden>
+      <video class="scare-video" id="scare-video" playsinline preload="auto"></video>
+      <div class="scare-face">
+        <span class="scare-eye scare-eye-left"></span>
+        <span class="scare-eye scare-eye-right"></span>
+        <span class="scare-mouth"></span>
+    <div class="sound-status" id="sound-status" role="status" aria-live="polite"></div>
+  </body>
+</html>
